@@ -1,3 +1,5 @@
 from Body_Detection import *
 
-start
+print("start")
+
+Start_Body_Detection()
