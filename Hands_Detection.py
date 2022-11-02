@@ -7,7 +7,21 @@
 
 
 
-def Start_Body_Detection():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def Start_Hands_Detection():
   print("Detecting....")
 
 
