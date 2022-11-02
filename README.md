@@ -8,3 +8,6 @@ Packges Nedded:
 
 
 >pip install opencv-python
+
+
+>pip install mediapipe
