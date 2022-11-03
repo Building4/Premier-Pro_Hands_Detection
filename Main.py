@@ -1,5 +1,2 @@
-from Body_Detection import *
-
-print("start")
-
-Start_Body_Detection()
+from actions import *
+rightLeftMovement(10)
