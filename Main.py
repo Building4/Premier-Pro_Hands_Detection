@@ -1,2 +1,2 @@
 from actions import *
-rightLeftMovement(10)
+rightLeftMovement(-10)
