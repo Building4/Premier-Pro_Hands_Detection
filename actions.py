@@ -8,6 +8,7 @@ def rightLeftMovement(a=0):
    if(a<0 and b>a):
      pg.hotkey("left")
      b=b-1
+print("hi")
 
   
     
