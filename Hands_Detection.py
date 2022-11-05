@@ -1,4 +1,6 @@
+import time
 import cv2
+
 import mediapipe as mp
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
@@ -54,6 +56,9 @@ with mp_hands.Hands(
     min_tracking_confidence=0.5) as hands:
   while cap.isOpened():
     success, image = cap.read()
+    print(f'Hand landmarks of {image}:')
+    time.sleep(0.5)
+    
     if not success:
       print("Ignoring empty camera frame.")
       # If loading a video, use 'break' instead of 'continue'.
