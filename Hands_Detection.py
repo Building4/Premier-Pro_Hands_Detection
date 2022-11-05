@@ -18,6 +18,7 @@ with mp_hands.Hands(
     results = hands.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
     # Print handedness and draw hand landmarks on the image.
+    print("iiiiits")
     print('Handedness:', results.multi_handedness)
     if not results.multi_hand_landmarks:
       continue
