@@ -33,7 +33,8 @@ with mp_hands.Hands(min_detection_confidence=0.6, min_tracking_confidence=0.5, m
     image = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
     
     #print results
-    print(results)
+    print(results.multi_hand_landmarks[0].landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP])
+    time.sleep(0.2)
     
     if results.multi_hand_landmarks:
       for num, hand in enumerate(results.multi_hand_landmarks):
